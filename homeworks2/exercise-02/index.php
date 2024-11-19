@@ -1,10 +1,10 @@
 <?php
 echo "Введите делимое: ";
 $number1 = fgets(STDIN);
-$a = trim($numbers1); //Делимое
+$a = trim($number1); //Делимое
 
 echo "Введите делитель: ";
-$numbers2 = fgets(STDIN);
+$number2 = fgets(STDIN);
 $b = trim($number2); //Делитель
 
 if ($b === 0){
