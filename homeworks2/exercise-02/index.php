@@ -1,7 +1,12 @@
 <?php
+echo "Введите делимое: ";
+$number1 = fgets(STDIN);
+$a = trim($numbers1); //Делимое
 
-$a = 6;
-$b = 0;
+echo "Введите делитель: ";
+$numbers2 = fgets(STDIN);
+$b = trim($number2); //Делитель
+
 if ($b === 0){
 echo "Делить на 0 нельзя";
 }
@@ -10,5 +15,4 @@ echo $a / $b;
 } else {
 echo "Введите, пожалуйста, число";
 };
-
 ?>
