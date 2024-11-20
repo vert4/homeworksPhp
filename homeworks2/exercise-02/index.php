@@ -7,7 +7,7 @@ echo "Введите делитель: ";
 $enteredNumbers2 = fgets(STDIN);
 $divider = trim($enteredNumbers2); //Делитель
 
-if ($divider === "0") {//проверяем, что делитель не равен "0"
+if ($divider === 0) {//проверяем, что делитель не равен "0"
     echo "Делить на ноль нельзя" . PHP_EOL;
 } else {
     $divisible = intval($divisible); 
