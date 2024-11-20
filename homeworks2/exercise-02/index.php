@@ -1,18 +1,21 @@
 <?php
 echo "Введите делимое: ";
-$number1 = fgets(STDIN);
-$a = trim($number1); //Делимое
+$enteredNumbers1 = fgets(STDIN);
+$divisible = trim($enteredNumbers1); //Делимое
 
 echo "Введите делитель: ";
-$number2 = fgets(STDIN);
-$b = trim($number2); //Делитель
+$enteredNumbers2 = fgets(STDIN);
+$divider = trim($enteredNumbers2); //Делитель
 
-if ($b === 0){
-echo "Делить на 0 нельзя";
-}
-elseif (is_int($a) & is_int($b)) {
-echo $a / $b;
+if ($divider === "0") {//проверяем, что делитель не равен "0"
+    echo "Делить на ноль нельзя" . PHP_EOL;
 } else {
-echo "Введите, пожалуйста, число";
-};
+    $divisible = intval($divisible); 
+    $divider = intval($divider);
+    if ($divisible === 0 || $divider === 0) { // проверяем что, введенные числа преобразовались в integer 
+        echo "Введите пожалуйсто, число" . PHP_EOL;
+    } else {
+        echo "Результат: " .  $divisible / $divider . PHP_EOL;
+    }
+}
 ?>
