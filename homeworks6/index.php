@@ -9,7 +9,7 @@ echo "index2 (404)</a>";
 echo "</li>";
 echo "<li>";
 echo " <a href = ";
-echo "'index3.php?param=text/plain'>";
+echo "'index3.php?text=Загруженный файл'>";
 echo "index3 txt</a>";
 echo "</li>";
 echo "<li>";
